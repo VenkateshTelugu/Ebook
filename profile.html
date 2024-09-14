@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .profile-header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .profile-header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .profile-details {
+            margin-bottom: 20px;
+        }
+        .profile-details h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        .profile-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a class="a" href="home.html"> Home</a>
+    <div class="container">
+      
+        <div class="profile-header">
+            <img src="images/profile-pic.jpg" alt="Profile Picture">
+            <div>
+                <h1>John Doe</h1>
+                <p>Email: john.doe@example.com</p>
+                <p>Member Since: January 2022</p>
+            </div>
+        </div>
+        <div class="profile-details">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet, nisl at interdum lacinia, nisi libero lacinia ex, et tincidunt libero odio sed metus.</p>
+            <h2>Contact Information</h2>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+        <div class="button-container">
+            <a href="edit-profile.html">Edit Profile</a>
+        </div>
+    </div>
+</body>
+</html>

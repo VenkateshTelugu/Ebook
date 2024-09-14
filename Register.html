@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff9900;
+        }
+        table {
+            width: 100%;
+        }
+        table td {
+            padding: 10px;
+        }
+        table input[type="text"], 
+        table input[type="password"], 
+        table textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        input[type="submit"], 
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #ff9900;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #ccc;
+            color: #333;
+        }
+        input[type="submit"]:hover, 
+        input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <a class="a" href="home.html"> Home</a>
+    <div class="container">
+      
+        <h1>Register</h1>
+        <form method="post" action="catalog.html">
+            <table>
+                <tr>
+                    <td><h4>User Name:</h4></td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><h4>Password:</h4></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><h4>Confirm Password:</h4></td>
+                    <td><input type="password" name="confirm_password" required></td>
+                </tr>
+                <td><h4>Gender</h4></td>
+                <tr>
+                    <td colspan="2">
+                        
+                        <div class="radio-group">
+                            
+                            
+                            <label >
+                                <input type="radio" name="sex" value="male" required> Male
+                                <input type="radio" name="sex" value="female" required> Female
+                            </label>
+                           
+                             
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>Address:</h4></td>
+                    <td><textarea name="address" rows="5" cols="20" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

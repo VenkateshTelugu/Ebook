@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            background-image: url('/public/images/shopping.jpeg');
+            background-size: 1500px 700px;
+            background-repeat: no-repeat;
+            background-color: #1d0101;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        select, input[type="text"], input[type="submit"] {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .cost-info {
+            text-align: center;
+            color: rgb(33, 19, 230);
+            margin: 20px 0;
+        }
+
+        .cost-info p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a class="a" href="home.html">Home</a>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <form method="post" action="payment.html">
+            <table>
+                <tr>
+                    <td>Text Books</td>
+                    <td>
+                        <select name="book">
+                            <optgroup label="Select the book"  required>
+                                <option value="C&Ds">C&Ds</option>
+                                <option value="Ads">Ads</option>
+                                <option value="Java">Java</option>
+                                <option value="Oracle">Oracle</option>
+                                <option value="Ms SQL Server">Ms SQL Server</option>
+                                <option value="MySql">MySql</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td><input type="text" id="quantity" name="quantity" placeholder="Enter quantity" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                     
+                        <button type="button" onclick="addToCart()">Pay</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="cost-info">
+            <p>Cost of one book: $500</p>
+            <p>Shipping: $100</p>
+        </div>
+    </div>
+    
+  <script>
+    function addToCart() {
+      window.location.href = "/public/html/payment.html";
+    }
+  </script>
+</body>
+</html>

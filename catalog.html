@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Catalog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style for the book card container */
+    .book-card {
+      flex: 0 0 calc(32% - 10px); /* Adjust width as needed */
+      background-color: #f0f0f0;
+      padding: 2px;
+      align-content: space-between;
+      margin-bottom: 10px;
+      gap: 5px;
+      width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    /* Style for the book cover image */
+    .book-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Style for the book title */
+    .book-card h2 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    /* Style for book details */
+    .book-card p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+
+    /* Style for the "Add to Cart" button */
+    .book-card button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body bgcolor="white">
+  <a href="home.html">Home</a>
+  <center><h1>Books</h1></center>
+  <form method="post" action="shopping.html">
+    <div class="card-container">
+
+      <div class="book-card">
+        <img src="/public/images/coder.jpeg" alt="Book Cover">
+        <h2>Title of the Book</h2>
+        <p>Author: Author Name</p>
+        <p>Genre: Fiction</p>
+        <p>Price: $19.99</p>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="/public/images/cbook.jpeg" alt="Book Cover">
+        <h2>Title of the Book</h2>
+        <p>Author: Author Name</p>
+        <p>Genre: Fiction</p>
+        <p>Price: $19.99</p>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="book-card">
+        <img src="/public/images/php.jpeg" alt="Book Cover">
+        <h2>Title of the Book</h2>
+        <p>Author: Author Name</p>
+        <p>Genre: Fiction</p>
+        <p>Price: $19.99</p>
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+      </div>
+      
+    </div>
+  </form>
+
+  <script>
+    function addToCart() {
+      window.location.href = "/public/html/shopping.html";
+    }
+  </script>
+</body>
+</html>
